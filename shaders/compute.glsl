@@ -17,6 +17,11 @@ layout(std430, binding = 2) buffer input_layout
 };
 
 uniform vec2 random;
+uniform int colorCount;
+uniform vec3 colors[6];
+uniform float colorMatrix[6][6];
+uniform float colorDropOffIn[6];
+uniform float colorDropOffOut[6];
 
 float rand(vec2 co);
 float magnitude(float a, float b);

@@ -89,8 +89,13 @@ public:
 
     // activate the shader
     // ------------------------------------------------------------------------
-    void use() {
+    void useVerFrag() {
         glUseProgram(ID);
+    }
+
+    // activate the shader
+    // ------------------------------------------------------------------------
+    void useCompute() {
         glUseProgram(COMPUTE_ID);
     }
 
